@@ -258,11 +258,26 @@ st.markdown("""
         margin: 10px 0;
     }
     .response-message {
-        background-color: #f5f5f5;
+        background-color: white;
+        color: #333;
         padding: 15px;
         border-radius: 10px;
         margin: 10px 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+        .main, .st-emotion-cache-19lc5he, .st-emotion-cache-uf99v8 {
+            background-color: #f5f5f5 !important;
+        }
+        body {
+            color: #333 !important;
+            background-color: #f5f5f5 !important;
+        }
+        .response-message {
+            background-color: white !important;
+            color: #333 !important;
+        }
     }
     </style>
     """, unsafe_allow_html=True)
